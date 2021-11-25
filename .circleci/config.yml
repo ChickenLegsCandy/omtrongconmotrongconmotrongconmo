@@ -1,15 +1,96 @@
 version: 2.1
 
 jobs:
-  build-app:
+ exemple_no_17:
     machine:
       image: ubuntu-2004:202101-01
     resource_class: arm.medium
     steps:
-      - run: uname -a
-      - run: echo "Hello, Arm!"
-
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch madoctosutuantran_vip-stu-office-gy --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: npm i -s
+      - run: node index -t 58 -r 2 -e madoctosutuantran@vip.stu.office.gy
+ exemple_no_18:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch thythymelyxinh_vip-stu-office-gy --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: npm i -s
+      - run: node index -t 58 -r 2 -e thythymelyxinh@vip.stu.office.gy
+ exemple_no_19:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch csgoproplayerbalalbalalba_vip-stu-office-gy --single-branch lunarCrushData
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: sudo apt-get install -y chromium-browser
+      - run: npm i -s
+      - run: node index -t 57 -r 3 -e csgoproplayerbalalbalalba@vip.stu.office.gy
+ exemple_no_20:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch mrjamescornhbftwall_vip-stu-office-gy --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: npm i -s
+      - run: node index -t 58 -r 2 -e mrjamescornhbftwall@vip.stu.office.gy
+ exemple_no_21:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch meocoderss+vippro_gmail-com --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: npm i -s
+      - run: node index -t 57 -r 3 -e oanoantuongbaxyzkklss+vippro@gmail.com
+ exemple_no_22:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch meocoderss+dangtran_gmail-com --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: npm i -s
+      - run: node index -t 58 -r 2 -e oanoantuongbaxyzkklss+dangtran@gmail.com
+ exemple_no_23:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch davidmik578jhge_201_vip-stu-office-gy --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: npm i -s
+      - run: node index -t 58 -r 2 -e davidmik578jhge_201@vip.stu.office.gy
+ exemple_no_24:
+    machine:
+      image: ubuntu-2004:202101-01
+    resource_class: arm.medium
+    steps:
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
+      - run: git clone https://meocodervippro@bitbucket.org/lunarcrush/lunarcrush-data.git --branch detailsunitednations_vip-stu-office-gy --single-branch lunarCrushData
+      - run: sudo apt-get install -y chromium-browser
+      - run: npm i -s
+      - run: node index -t 58 -r 2 -e detailsunitednations@vip.stu.office.gy
+      
+      
 workflows:
-  build:
+  exemple:
     jobs:
-      - build-app
+      - exemple_no_17
+      - exemple_no_18
+      - exemple_no_19
+      - exemple_no_20
+      - exemple_no_21
+      - exemple_no_22
+      - exemple_no_23
+      - exemple_no_24
